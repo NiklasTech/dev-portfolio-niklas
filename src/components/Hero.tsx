@@ -101,7 +101,7 @@ export function Hero() {
               }`}
             >
               <a
-                href="https://github.com"
+                href="https://github.com/NiklasTech"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition"
@@ -116,7 +116,7 @@ export function Hero() {
                 </svg>
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/niklas-h-tech/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition"
@@ -131,7 +131,7 @@ export function Hero() {
                 </svg>
               </a>
               <a
-                href="mailto:your.email@example.com"
+                href="mailto:haeussler.business@gmail.com"
                 className="text-gray-400 hover:text-white transition"
               >
                 <svg
