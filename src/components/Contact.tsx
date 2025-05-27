@@ -68,7 +68,9 @@ export function Contact() {
       );
       return {
         allowed: false,
-        message: `Rate limit exceeded. You can send ${RATE_LIMIT_CONFIG.maxEmails} emails per hour. Try again in ${timeLeft} minutes.`,
+        message: t("contact_rate_limit_exceeded")
+          .replace("{0}", String(RATE_LIMIT_CONFIG.maxEmails))
+          .replace("{1}", String(timeLeft)),
         timeLeft,
       };
     }
@@ -84,7 +86,10 @@ export function Contact() {
       );
       return {
         allowed: false,
-        message: `Please wait ${timeLeft} minutes before sending another email.`,
+        message: t("contact_rate_limit_cooldown").replace(
+          "{0}",
+          String(timeLeft)
+        ),
         timeLeft,
       };
     }
@@ -166,17 +171,21 @@ export function Contact() {
     setIsSubmitting(true);
     setSubmitStatus({ type: null, message: "" });
 
+    const EMAILJS_CONFIG = {
+      serviceId: import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      templateId: import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+    };
+
     try {
-      const result = await emailjs.sendForm(
-        "service_x63nj8d",
-        "template_2dlhx9o",
+      await emailjs.sendForm(
+        EMAILJS_CONFIG.serviceId,
+        EMAILJS_CONFIG.templateId,
         formRef.current,
         {
-          publicKey: "P7SERrBOTbuVz_6lh",
+          publicKey: EMAILJS_CONFIG.publicKey,
         }
       );
-
-      console.log("Email sent successfully:", result.text);
 
       updateRateLimit();
 
