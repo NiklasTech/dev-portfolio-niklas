@@ -172,9 +172,10 @@ export function Contact() {
     setSubmitStatus({ type: null, message: "" });
 
     const EMAILJS_CONFIG = {
-      serviceId: import.meta.env.VITE_EMAILJS_SERVICE_ID,
-      templateId: import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-      publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+      serviceId: import.meta.env.VITE_EMAILJS_SERVICE_ID || "service_x63nj8d",
+      templateId:
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID || "template_2dlhx9o",
+      publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY || "P7SERrBOTbuVz_6lh",
     };
 
     try {
