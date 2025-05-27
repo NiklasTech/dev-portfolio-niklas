@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "Inter", "Segoe UI", Roboto, sans-serif;
+    color: #e0e0e0;
+    /* For the background color whole page */
+    background-color: #000000;
+    transition: all;
+  }
+
+  code,
+  .font-mono {
+    font-family: "JetBrains Mono", "Fira Code", "Courier New", monospace;
+  }
+
+  ::selection {
+    background: #22c55e;
+    color: #050505;
+  }
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #22c55e, #0ea5e9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.terminal-text {
+  color: #22c55e;
+  font-family: "JetBrains Mono", "Fira Code", "Courier New", monospace;
+}
+
+.text-green-500 {
+  text-shadow: 0 0 5px rgba(34, 197, 94, 0.3);
+}
+
+.terminal-prompt::before {
+  content: ">";
+  color: #22c55e;
+  margin-right: 0.5rem;
+}
+
+.animate-cursor {
+  animation: cursor 1s infinite;
+}
+
+@keyframes cursor {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  background-color: rgba(15, 15, 15, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(45, 45, 45, 0.5);
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  border-color: rgba(34, 197, 94, 0.5);
+  box-shadow: 0 0 15px rgba(34, 197, 94, 0.2);
+}
+
+.skill-icon {
+  transition: all 0.3s ease;
+}
+
+.skill-icon:hover {
+  transform: translateY(-5px);
+  filter: drop-shadow(0 0 8px rgba(34, 197, 94, 0.5));
+}
+
+section {
+  position: relative;
+}
+
+section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient 15s ease infinite;
+}

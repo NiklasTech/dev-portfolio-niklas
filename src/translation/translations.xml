@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+<!-- Hero Section -->
+  <text name="hero_greeting" langEn="Hi, I'm Niklas" langDe="Hi, ich bin Niklas" />
+  <text name="hero_title" langEn="Full Stack Developer with a focus on clean architecture and real-world usability" langDe="Full Stack Developer mit Fokus auf klare Architektur und praxisnahe Anwendungen" />
+  <text name="hero_description" langEn="I build reliable and efficient web applications with a strong emphasis on clean code, performance, and user experience. Using tools like React, Next.js, and Node.js, I turn complex requirements into intuitive and maintainable solutions." langDe="Ich entwickle zuverlässige und performante Webanwendungen – mit klarem Fokus auf sauberen Code, Effizienz und Nutzerfreundlichkeit. Mit Technologien wie React, Next.js und Node.js setze ich komplexe Anforderungen in intuitive, wartbare Lösungen um." />
+  <text name="hero_cta_work" langEn="Let’s Connect" langDe="Lass uns austauschen" />
+  <text name="hero_view_projects" langEn="See My Work" langDe="Projekte ansehen" />
+  <text name="hero_view_skills" langEn="View My Skills" langDe="Fähigkeiten ansehen" />
+
+  <!-- Navigation -->
+  <text name="nav_home" langEn="Home" langDe="Startseite" />
+  <text name="nav_skills" langEn="Skills" langDe="Fähigkeiten" />
+  <text name="nav_projects" langEn="Projects" langDe="Projekte" />
+  <text name="nav_journey" langEn="Journey" langDe="Werdegang" />
+  <text name="nav_contact" langEn="Contact" langDe="Kontakt" />
+
+  <!-- Terminal -->
+  <text name="terminal_welcome" langEn="Welcome to my interactive terminal!" langDe="Willkommen in meinem interaktiven Terminal!" />
+  <text name="terminal_try_commands" langEn="Try these commands:" langDe="Probiere diese Befehle aus:" />
+  <text name="terminal_help_available" langEn="Available commands:" langDe="Verfügbare Befehle:" />
+  <text name="terminal_help_about" langEn="Learn more about me" langDe="Erfahre mehr über mich" />
+  <text name="terminal_help_skills" langEn="View my technical skills" langDe="Zeige meine technischen Fähigkeiten" />
+  <text name="terminal_help_projects" langEn="Check out my projects" langDe="Schaue dir meine Projekte an" />
+  <text name="terminal_help_contact" langEn="Get my contact information" langDe="Hole dir meine Kontaktinformationen" />
+  <text name="terminal_help_clear" langEn="Clear the terminal" langDe="Terminal leeren" />
+  <text name="terminal_help_help" langEn="Show this help message" langDe="Diese Hilfe anzeigen" />
+  <text name="terminal_about_text"
+      langEn="I'm a passionate Full Stack Developer who believes great software starts with understanding real user needs. I specialize in building modern, scalable web applications that balance cutting-edge technology with practical usability. My approach focuses on writing clean, maintainable code and creating intuitive user experiences. When I'm not coding, you'll find me gaming, hitting the gym, or enjoying the outdoors. Currently diving deep into React ecosystems and backend architectures, I'm always excited to tackle complex challenges and learn emerging technologies that push the boundaries of what's possible on the web."
+      langDe="Ich bin ein leidenschaftlicher Full Stack Developer, der glaubt, dass großartige Software mit dem Verständnis echter Nutzerbedürfnisse beginnt. Ich spezialisiere mich auf moderne, skalierbare Webanwendungen, die modernste Technologie mit praktischer Benutzerfreundlichkeit vereinen. Mein Ansatz konzentriert sich auf sauberen, wartbaren Code und intuitive Benutzererfahrungen. Wenn ich nicht programmiere, findest du mich beim Zocken, im Fitnessstudio oder draußen in der Natur. Derzeit vertiefe ich mich in React-Ökosysteme und Backend-Architekturen und freue mich immer darauf, komplexe Herausforderungen anzugehen und neue Technologien zu erlernen." />
+
+  <text name="terminal_skills_frontend" langEn="Frontend:" langDe="Frontend:" />
+  <text name="terminal_skills_backend" langEn="Backend:" langDe="Backend:" />
+  <text name="terminal_skills_tools" langEn="Tools &amp; Others:" langDe="Tools &amp; Sonstiges:" />
+  <text name="terminal_projects_recent" langEn="Recent Projects:" langDe="Neueste Projekte:" />
+  <text name="terminal_project_ecommerce" langEn="A full-stack online store with payment processing and inventory management." langDe="Ein vollständiger Online-Shop mit Zahlungsabwicklung und Lagerverwaltung." />
+  <text name="terminal_project_taskmanager" langEn="A productivity tool with drag-and-drop interface and real-time updates." langDe="Ein Produktivitätstool mit Drag-and-Drop-Interface und Echtzeit-Updates." />
+  <text name="terminal_project_portfolio" langEn="This interactive developer portfolio showcasing my work and skills." langDe="Dieses interaktive Entwickler-Portfolio zeigt meine Arbeit und Fähigkeiten." />
+  <text name="terminal_project_more" langEn="or click the Projects section to see more details." langDe="oder klicke auf den Projekte-Bereich, um mehr Details zu sehen." />
+  <text name="terminal_contact_info" langEn="Contact Information:" langDe="Kontaktinformationen:" />
+  <text name="terminal_contact_message" langEn="Feel free to reach out! I'm always open to new opportunities and collaborations." langDe="Zögere nicht, mich zu kontaktieren! Ich bin immer offen für neue Möglichkeiten und Kooperationen." />
+  <text name="terminal_navigate_projects" langEn="Navigating to Projects section..." langDe="Navigiere zum Projekte-Bereich..." />
+  <text name="terminal_navigate_skills" langEn="Navigating to Skills section..." langDe="Navigiere zum Fähigkeiten-Bereich..." />
+  <text name="terminal_navigate_contact" langEn="Navigating to Contact section..." langDe="Navigiere zum Kontakt-Bereich..." />
+  <text name="terminal_command_not_found" langEn="Command not recognized:" langDe="Befehl nicht erkannt:" />
+  <text name="terminal_type_help" langEn="Type help for available commands." langDe="Gib help ein für verfügbare Befehle." />
+
+  <!-- Skills Section -->
+  <text name="skills_title" langEn="Skills &amp; Expertise" langDe="Fähigkeiten &amp; Expertise" />
+  <text name="skills_frontend_title" langEn="Frontend Skills" langDe="Frontend-Fähigkeiten" />
+  <text name="skills_backend_title" langEn="Backend Skills" langDe="Backend-Fähigkeiten" />
+  <text name="skills_ui_development" langEn="UI/UX Development" langDe="UI/UX-Entwicklung" />
+  <text name="skills_responsive_design" langEn="Responsive Design" langDe="Responsive Design" />
+  <text name="skills_animation" langEn="Animation &amp; Interaction" langDe="Animation &amp; Interaktion" />
+  <text name="skills_api_development" langEn="API Development" langDe="API-Entwicklung" />
+  <text name="skills_database_management" langEn="Database Management" langDe="Datenbank-Management" />
+  <text name="skills_cloud_services" langEn="Cloud Services" langDe="Cloud-Dienste" />
+  <text name="skills_other_technologies" langEn="Other Technologies &amp; Tools" langDe="Andere Technologien &amp; Tools" />
+
+  <!-- Projects Section -->
+  <text name="projects_title" langEn="Featured Projects" langDe="Ausgewählte Projekte" />
+  <text name="projects_description" langEn="Here are some of my recent projects that showcase my skills and experience. Each project is briefly described with links to code repositories and live demos." langDe="Hier sind einige meiner neuesten Projekte, die meine Fähigkeiten und Erfahrungen zeigen. Jedes Projekt wird kurz beschrieben mit Links zu Code-Repositories und Live-Demos." />
+  <text name="project_ecommerce_title" langEn="E-Commerce Platform" langDe="E-Commerce-Plattform" />
+  <text name="project_ecommerce_desc" langEn="A fully responsive e-commerce website with cart functionality and payment integration." langDe="Eine vollständig responsive E-Commerce-Website mit Warenkorb-Funktionalität und Zahlungsintegration." />
+  <text name="project_taskmanager_title" langEn="Task Management App" langDe="Aufgabenverwaltungs-App" />
+  <text name="project_taskmanager_desc" langEn="A productivity application for managing tasks with drag-and-drop functionality and real-time updates." langDe="Eine Produktivitätsanwendung zur Verwaltung von Aufgaben mit Drag-and-Drop-Funktionalität und Echtzeit-Updates." />
+  <text name="project_authron_title" langEn="Authron - Secure Password Manager" langDe="Authron - Sicherer Passwort-Manager" />
+  <text name="project_authron_desc" langEn="A modern, secure password manager with end-to-end encryption, 2FA support, team sharing, admin dashboard and automatic backups. Offers advanced features like TOTP generator and dark mode." langDe="Ein moderner, sicherer Passwort-Manager mit End-to-End-Verschlüsselung, 2FA-Unterstützung, Team-Sharing, Admin-Dashboard und automatischen Backups. Bietet erweiterte Funktionen wie TOTP-Generator und Dark Mode." />
+  <text name="project_live_demo" langEn="Live Demo" langDe="Live-Demo" />
+  <text name="project_view_code" langEn="View Code" langDe="Code anzeigen" />
+  <text name="projects_github_more" langEn="See more projects on GitHub" langDe="Weitere Projekte auf GitHub ansehen" />
+
+  <!-- Timeline Section -->
+  <text name="timeline_title" langEn="My Career Journey" langDe="Mein Karriereweg" />
+  <text name="timeline_description" langEn="My professional path in web development and continuous learning journey." langDe="Mein beruflicher Weg in der Webentwicklung und kontinuierliche Lernreise." />
+  <text name="timeline_it_specialist" langEn="IT Specialist in Application Development" langDe="Fachinformatiker für Anwendungsentwicklung" />
+  <text name="timeline_current_position" langEn="Current Position" langDe="Aktuelle Position" />
+  <text name="timeline_it_desc1" langEn="Developing and maintaining web applications with modern JavaScript frameworks" langDe="Entwicklung und Wartung von Webanwendungen mit modernen JavaScript-Frameworks" />
+  <text name="timeline_it_desc2" langEn="Focus on user experience and responsive design patterns" langDe="Fokus auf Benutzererfahrung und responsive Design-Muster" />
+  <text name="timeline_it_achievement1" langEn="Implementing clean, scalable frontend architectures" langDe="Implementierung sauberer, skalierbarer Frontend-Architekturen" />
+  <text name="timeline_it_achievement2" langEn="Collaborating with teams to deliver high-quality applications" langDe="Zusammenarbeit mit Teams zur Bereitstellung hochwertiger Anwendungen" />
+  <text name="timeline_college_title" langEn="Advanced Technical College Entrance Qualification" langDe="Fachhochschulreife" />
+  <text name="timeline_college" langEn="Technical College" langDe="Berufsschule" />
+  <text name="timeline_college_desc1" langEn="Specialized in Computer Science with focus on web development" langDe="Spezialisierung auf Informatik mit Fokus auf Webentwicklung" />
+  <text name="timeline_college_desc2" langEn="Learned fundamentals of programming and software development" langDe="Erlernte Grundlagen der Programmierung und Softwareentwicklung" />
+  <text name="timeline_college_achievement1" langEn="Gained solid foundation in computer science principles" langDe="Solide Grundlage in Informatik-Prinzipien erworben" />
+  <text name="timeline_college_achievement2" langEn="Developed passion for frontend development and UI/UX design" langDe="Leidenschaft für Frontend-Entwicklung und UI/UX-Design entwickelt" />
+  <text name="timeline_learning_focus" langEn="Learning Focus" langDe="Lernfokus" />
+  <text name="timeline_learning1" langEn="Advanced React Patterns &amp; Architecture" langDe="Erweiterte React-Patterns &amp; Architektur" />
+  <text name="timeline_learning2" langEn="Modern CSS Frameworks &amp; Animations" langDe="Moderne CSS-Frameworks &amp; Animationen" />
+  <text name="timeline_learning3" langEn="Progressive Web Application Development" langDe="Progressive Web Application-Entwicklung" />
+  <text name="timeline_professional_goals" langEn="Professional Goals" langDe="Berufliche Ziele" />
+  <text name="timeline_goal1" langEn="Master modern frontend frameworks and tools" langDe="Moderne Frontend-Frameworks und Tools lernen" />
+  <text name="timeline_goal2" langEn="Contribute to open-source projects" langDe="Zu Open-Source-Projekten beitragen" />
+  <text name="timeline_goal3" langEn="Build innovative web applications" langDe="Innovative Webanwendungen entwickeln" />
+  <text name="timeline_responsibilities" langEn="Responsibilities" langDe="Verantwortlichkeiten" />
+  <text name="timeline_key_focus" langEn="Key Focus Areas" langDe="Hauptfokusbereiche" />
+
+  <!-- Testimonials Section -->
+  <text name="testimonials_title" langEn="Success Stories &amp; Collaborations" langDe="Erfolgsgeschichten &amp; Kooperationen" />
+  <text name="testimonials_subtitle" langEn="Building Trust Through Excellence in Every Project" langDe="Vertrauen aufbauen durch Exzellenz in jedem Projekt" />
+  <text name="testimonial1_quote" langEn="Working with YourName was truly exceptional. As their team lead, I was consistently impressed by their growth mindset - they don't just learn new skills, but seek out the best practices in any technology they work with, a rare quality among developers. Their attention to detail speaks for itself in their work, and what stands out most is how they solve complex problems with minimal guidance." langDe="Die Zusammenarbeit mit YourName war wirklich außergewöhnlich. Als Teamleiter war ich durchweg beeindruckt von ihrer Wachstumsmentalität - sie lernen nicht nur neue Fähigkeiten, sondern suchen die besten Praktiken in jeder Technologie, mit der sie arbeiten, eine seltene Eigenschaft unter Entwicklern. Ihre Liebe zum Detail spricht für sich in ihrer Arbeit, und was am meisten hervorsticht, ist, wie sie komplexe Probleme mit minimaler Anleitung lösen." />
+  <text name="testimonial1_name" langEn="Alex Johnson" langDe="Alex Johnson" />
+  <text name="testimonial1_position" langEn="Team Lead at TechCorp" langDe="Teamleiter bei TechCorp" />
+  <text name="testimonial2_quote" langEn="YourName delivered our project not just on time, but with features that exceeded our expectations. Their ability to understand our business needs and translate them into technical solutions made the development process smooth and the end result exceptional. I would highly recommend them for any challenging web development project." langDe="YourName hat unser Projekt nicht nur pünktlich geliefert, sondern mit Funktionen, die unsere Erwartungen übertroffen haben. Ihre Fähigkeit, unsere Geschäftsanforderungen zu verstehen und sie in technische Lösungen umzusetzen, machte den Entwicklungsprozess reibungslos und das Endergebnis außergewöhnlich. Ich würde sie für jedes anspruchsvolle Webentwicklungsprojekt sehr empfehlen." />
+  <text name="testimonial2_name" langEn="Sarah Williams" langDe="Sarah Williams" />
+  <text name="testimonial2_position" langEn="CEO at StartupX" langDe="CEO bei StartupX" />
+  <text name="testimonial3_quote" langEn="The application YourName built for us has significantly improved our internal workflows. What impressed me most was not just their technical skills, but their ability to suggest improvements to our initial requirements that ended up saving us time and money. A true professional who cares about delivering value." langDe="Die Anwendung, die YourName für uns entwickelt hat, hat unsere internen Arbeitsabläufe erheblich verbessert. Was mich am meisten beeindruckt hat, waren nicht nur ihre technischen Fähigkeiten, sondern ihre Fähigkeit, Verbesserungen zu unseren ursprünglichen Anforderungen vorzuschlagen, die uns letztendlich Zeit und Geld gespart haben. Ein echter Profi, der sich darum kümmert, Wert zu liefern." />
+  <text name="testimonial3_name" langEn="Michael Chen" langDe="Michael Chen" />
+  <text name="testimonial3_position" langEn="Product Manager at InnovateCo" langDe="Produktmanager bei InnovateCo" />
+
+  <!-- Contact Section -->
+  <text name="contact_title" langEn="Let's create something extraordinary together" langDe="Lass uns gemeinsam etwas Außergewöhnliches schaffen" />
+  <text name="contact_description" langEn="Ready to transform your ideas into reality? From concept to completion, let's build something that sets new standards and exceeds expectations." langDe="Bereit, deine Ideen in die Realität umzusetzen? Von der Konzeption bis zur Fertigstellung - lass uns etwas bauen, das neue Standards setzt und Erwartungen übertrifft." />
+  <text name="contact_get_in_touch" langEn="Get In Touch" langDe="Kontakt aufnehmen" />
+  <text name="contact_name" langEn="Name" langDe="Name" />
+  <text name="contact_name_placeholder" langEn="Your Name" langDe="Dein Name" />
+  <text name="contact_email" langEn="Email" langDe="E-Mail" />
+  <text name="contact_email_placeholder" langEn="your.email@example.com" langDe="deine.email@beispiel.de" />
+  <text name="contact_message" langEn="Message" langDe="Nachricht" />
+  <text name="contact_message_placeholder" langEn="Tell me about your project..." langDe="Erzähle mir von deinem Projekt..." />
+  <text name="contact_submit" langEn="Let's Connect" langDe="Lass uns vernetzen" />
+  <text name="contact_information" langEn="Contact Information" langDe="Kontaktinformationen" />
+  <text name="contact_email_label" langEn="Email" langDe="E-Mail" />
+  <text name="contact_location_label" langEn="Location" langDe="Standort" />
+  <text name="contact_location_value" langEn="North Rhine-Westphalia, Germany" langDe="Nordrhein-Westfalen, Deutschland" />
+  <text name="contact_availability_label" langEn="Availability" langDe="Verfügbarkeit" />
+  <text name="contact_availability_value" langEn="Open to Opportunities" langDe="Offen für Möglichkeiten" />
+  <text name="contact_social_media" langEn="Connect on Social Media" langDe="In sozialen Medien vernetzen" />
+
+  <!-- Common UI Elements -->
+  <text name="loading" langEn="Loading..." langDe="Laden..." />
+  <text name="error" langEn="Error" langDe="Fehler" />
+  <text name="success" langEn="Success" langDe="Erfolg" />
+  <text name="close" langEn="Close" langDe="Schließen" />
+  <text name="open" langEn="Open" langDe="Öffnen" />
+  <text name="next" langEn="Next" langDe="Weiter" />
+  <text name="previous" langEn="Previous" langDe="Zurück" />
+  <text name="read_more" langEn="Read More" langDe="Mehr lesen" />
+  <text name="learn_more" langEn="Learn More" langDe="Mehr erfahren" />
+
+  <text name="projects_description_real" langEn="Here are my current projects that showcase my skills and development journey. Each project represents real work and learning experiences." langDe="Hier sind meine aktuellen Projekte, die meine Fähigkeiten und Entwicklungsreise zeigen. Jedes Projekt repräsentiert echte Arbeit und Lernerfahrungen." />
+  <text name="project_portfolio_title" langEn="Developer Portfolio" langDe="Entwickler-Portfolio" />
+  <text name="project_portfolio_desc" langEn="This interactive portfolio website built with React, TypeScript and modern web technologies. Features include terminal simulation, matrix background, and multi-language support." langDe="Diese interaktive Portfolio-Website, gebaut mit React, TypeScript und modernen Web-Technologien. Features beinhalten Terminal-Simulation, Matrix-Hintergrund und Multi-Sprach-Unterstützung." />
+  <text name="project_featured" langEn="Featured" langDe="Hervorgehoben" />
+  <text name="project_no_demo" langEn="No Public Demo" langDe="Keine öffentliche Demo" />
+  <text name="project_screenshot_coming" langEn="Screenshot coming soon" langDe="Screenshot kommt bald" />
+  <text name="projects_work_in_progress" langEn="More Projects Coming Soon" langDe="Weitere Projekte kommen bald" />
+  <text name="projects_more_coming" langEn="I'm constantly working on new projects and learning new technologies. Follow my GitHub to stay updated on my latest work." langDe="Ich arbeite ständig an neuen Projekten und lerne neue Technologien. Folge meinem GitHub, um über meine neueste Arbeit auf dem Laufenden zu bleiben." />
+  <text name="projects_github_follow" langEn="Follow my progress on GitHub" langDe="Verfolge meinen Fortschritt auf GitHub" />
+
+  <text name="contact_sending" langEn="Sending..." langDe="Sende..." />
+  <text name="contact_success_message" langEn="Thank you! Your message has been sent successfully." langDe="Vielen Dank! Deine Nachricht wurde erfolgreich gesendet." />
+  <text name="contact_error_message" langEn="Sorry, there was an error sending your message. Please try again later." langDe="Entschuldigung, beim Senden deiner Nachricht ist ein Fehler aufgetreten. Bitte versuche es später erneut." />
+  <text name="contact_error_required_fields" langEn="Please fill in all required fields." langDe="Bitte fülle alle Pflichtfelder aus." />
+  <text name="contact_subject" langEn="Subject" langDe="Betreff" />
+  <text name="contact_subject_placeholder" langEn="What's this about?" langDe="Worum geht es?" />
+</translations>

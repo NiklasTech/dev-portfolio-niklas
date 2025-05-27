@@ -1,0 +1,19 @@
+/* src/matrix.css */
+.matrix-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  overflow: hidden;
+  z-index: -1;
+  opacity: 0.8; /* Adjust for better readability of content */
+}
+
+.matrix-bg canvas {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
