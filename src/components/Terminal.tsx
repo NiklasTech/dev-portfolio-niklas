@@ -177,7 +177,7 @@ export function Terminal() {
               <li>
                 GitHub:{" "}
                 <a
-                  href="https://github.com/yourusername"
+                  href="https://github.com/NiklasTech"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-400 hover:underline"
@@ -188,12 +188,12 @@ export function Terminal() {
               <li>
                 LinkedIn:{" "}
                 <a
-                  href="https://linkedin.com/in/yourusername"
+                  href="https://www.linkedin.com/in/niklas-h-tech/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-400 hover:underline"
                 >
-                  linkedin.com/in/yourusername
+                  linkedin.com/in/niklas-h-tech
                 </a>
               </li>
             </ul>
