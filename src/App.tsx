@@ -8,6 +8,8 @@ import { Terminal } from "./components/Terminal";
 import { Timeline } from "./components/Timeline";
 import { TranslationProvider } from "./hooks/useTranslation";
 import { LoadingSpinner } from "./components/LoadingSpinner";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import { Suspense, useEffect } from "react";
 
 export function App() {
@@ -33,6 +35,8 @@ export function App() {
             <Contact />
           </main>
         </div>
+        <Analytics />
+        <SpeedInsights />
       </Suspense>
     </TranslationProvider>
   );

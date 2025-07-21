@@ -155,4 +155,13 @@
   <text name="contact_error_required_fields" langEn="Please fill in all required fields." langDe="Bitte fülle alle Pflichtfelder aus." />
   <text name="contact_subject" langEn="Subject" langDe="Betreff" />
   <text name="contact_subject_placeholder" langEn="What's this about?" langDe="Worum geht es?" />
+
+  <text name="contact_rate_limit_exceeded" langEn="Rate limit exceeded. You can send {0} emails per hour. Try again in {1} minutes." langDe="Sendelimit überschritten. Du kannst {0} E-Mails pro Stunde senden. Versuche es in {1} Minuten erneut." />
+  <text name="contact_rate_limit_cooldown" langEn="Please wait {0} minutes before sending another email." langDe="Bitte warte {0} Minuten, bevor du eine weitere E-Mail sendest." />
+  <text name="contact_rate_limit_generic" langEn="Rate limit exceeded." langDe="Sendelimit überschritten." />
+  <text name="contact_error_name_length" langEn="Name must be at least 2 characters long." langDe="Der Name muss mindestens 2 Zeichen lang sein." />
+  <text name="contact_error_message_length" langEn="Message must be at least 10 characters long." langDe="Die Nachricht muss mindestens 10 Zeichen lang sein." />
+  <text name="contact_service_not_configured" langEn="Email service is not properly configured." langDe="Der E-Mail-Dienst ist nicht richtig konfiguriert." />
+  <text name="contact_success_with_remaining" langEn="You can send {0} more email(s) in the next hour." langDe="Du kannst in der nächsten Stunde noch {0} weitere E-Mail(s) senden." />
+  <text name="contact_success_limit_reached" langEn="You've reached the hourly email limit." langDe="Du hast das stündliche E-Mail-Limit erreicht." />
 </translations>
