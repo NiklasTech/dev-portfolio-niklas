@@ -164,4 +164,8 @@
   <text name="contact_service_not_configured" langEn="Email service is not properly configured." langDe="Der E-Mail-Dienst ist nicht richtig konfiguriert." />
   <text name="contact_success_with_remaining" langEn="You can send {0} more email(s) in the next hour." langDe="Du kannst in der nächsten Stunde noch {0} weitere E-Mail(s) senden." />
   <text name="contact_success_limit_reached" langEn="You've reached the hourly email limit." langDe="Du hast das stündliche E-Mail-Limit erreicht." />
+
+  <text name="contact_freelance_title" langEn="Looking for a Web Developer?" langDe="Suchst du einen Web-Entwickler?" />
+  <text name="contact_freelance_description" langEn="Beyond my personal projects, I also develop custom web solutions for businesses through my small business. I offer web development services including websites, e-commerce platforms, and custom applications." langDe="Neben meinen persönlichen Projekten entwickle ich auch maßgeschneiderte Web-Lösungen für Unternehmen über mein Kleingewerbe. Ich biete Web-Entwicklungs-Services an, einschließlich Websites, E-Commerce-Plattformen und Custom Applications." />
+  <text name="contact_freelance_cta" langEn="View Services" langDe="Services anschauen" />
 </translations>

@@ -422,7 +422,7 @@ export function Contact() {
                 </form>
               </div>
 
-              <div className="flex flex-col justify-between">
+              <div className="flex flex-col">
                 <div>
                   <h3 className="text-2xl font-bold text-white mb-6">
                     {t("contact_information")}
@@ -520,7 +520,38 @@ export function Contact() {
                   </div>
                 </div>
 
-                <div className="mt-10">
+                <div className="mt-12 pt-8 border-t border-gray-700">
+                  <div className="mb-10">
+                    <h3 className="text-xl font-bold text-white mb-3">
+                      {t("contact_freelance_title")}
+                    </h3>
+                    <p className="text-gray-400 mb-4 leading-relaxed">
+                      {t("contact_freelance_description")}
+                    </p>
+                    <a
+                      href="https://nh-webdev.de/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-green-500 hover:text-green-400 transition font-medium"
+                    >
+                      {t("contact_freelance_cta")}
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth={1.5}
+                        stroke="currentColor"
+                        className="w-4 h-4"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+
                   <h3 className="text-xl font-bold text-white mb-4">
                     {t("contact_social_media")}
                   </h3>
