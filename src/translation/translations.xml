@@ -64,7 +64,7 @@
   <text name="project_ecommerce_desc" langEn="A fully responsive e-commerce website with cart functionality and payment integration." langDe="Eine vollständig responsive E-Commerce-Website mit Warenkorb-Funktionalität und Zahlungsintegration." />
   <text name="project_taskmanager_title" langEn="Task Management App" langDe="Aufgabenverwaltungs-App" />
   <text name="project_taskmanager_desc" langEn="A productivity application for managing tasks with drag-and-drop functionality and real-time updates." langDe="Eine Produktivitätsanwendung zur Verwaltung von Aufgaben mit Drag-and-Drop-Funktionalität und Echtzeit-Updates." />
-  <text name="project_authron_title" langEn="Authron - Secure Password Manager" langDe="Authron - Sicherer Passwort-Manager" />
+  <text name="project_authron_title" langEn="Authron: Secure Password Manager" langDe="Authron: Sicherer Passwort-Manager" />
   <text name="project_authron_desc" langEn="A modern, secure password manager with end-to-end encryption, 2FA support, team sharing, admin dashboard and automatic backups. Offers advanced features like TOTP generator and dark mode." langDe="Ein moderner, sicherer Passwort-Manager mit End-to-End-Verschlüsselung, 2FA-Unterstützung, Team-Sharing, Admin-Dashboard und automatischen Backups. Bietet erweiterte Funktionen wie TOTP-Generator und Dark Mode." />
   <text name="project_live_demo" langEn="Live Demo" langDe="Live-Demo" />
   <text name="project_view_code" langEn="View Code" langDe="Code anzeigen" />
@@ -85,6 +85,12 @@
   <text name="timeline_college_desc2" langEn="Learned fundamentals of programming and software development" langDe="Erlernte Grundlagen der Programmierung und Softwareentwicklung" />
   <text name="timeline_college_achievement1" langEn="Gained solid foundation in computer science principles" langDe="Solide Grundlage in Informatik-Prinzipien erworben" />
   <text name="timeline_college_achievement2" langEn="Developed passion for frontend development and UI/UX design" langDe="Leidenschaft für Frontend-Entwicklung und UI/UX-Design entwickelt" />
+  <text name="timeline_freelance_title" langEn="Freelance Web Developer" langDe="Freiberuflicher Web-Entwickler" />
+  <text name="timeline_freelance_company" langEn="Small Business / Freelance" langDe="Kleingewerbe / Freiberuflich" />
+  <text name="timeline_freelance_desc1" langEn="Developing custom web solutions for businesses, from simple landing pages to full-stack applications" langDe="Entwicklung maßgeschneiderter Web-Lösungen für Unternehmen, von einfachen Onepagern bis zu Full-Stack-Applikationen" />
+  <text name="timeline_freelance_desc2" langEn="Creating e-commerce platforms, business websites, blogs, and website redesigns tailored to client needs" langDe="Erstellung von Onlineshops, Firmenwebsites, Blogseiten und Website-Überarbeitungen nach Kundenwünschen" />
+  <text name="timeline_freelance_achievement1" langEn="Building scalable web solutions from concept to deployment" langDe="Entwicklung skalierbarer Web-Lösungen von der Konzeption bis zur Bereitstellung" />
+  <text name="timeline_freelance_achievement2" langEn="Consulting clients on technology choices and best practices" langDe="Beratung von Kunden zu Technologie-Entscheidungen und Best Practices" />
   <text name="timeline_learning_focus" langEn="Learning Focus" langDe="Lernfokus" />
   <text name="timeline_learning1" langEn="Advanced React Patterns &amp; Architecture" langDe="Erweiterte React-Patterns &amp; Architektur" />
   <text name="timeline_learning2" langEn="Modern CSS Frameworks &amp; Animations" langDe="Moderne CSS-Frameworks &amp; Animationen" />
@@ -111,7 +117,7 @@
 
   <!-- Contact Section -->
   <text name="contact_title" langEn="Let's create something extraordinary together" langDe="Lass uns gemeinsam etwas Außergewöhnliches schaffen" />
-  <text name="contact_description" langEn="Ready to transform your ideas into reality? From concept to completion, let's build something that sets new standards and exceeds expectations." langDe="Bereit, deine Ideen in die Realität umzusetzen? Von der Konzeption bis zur Fertigstellung - lass uns etwas bauen, das neue Standards setzt und Erwartungen übertrifft." />
+  <text name="contact_description" langEn="Ready to transform your ideas into reality? From concept to completion, let's build something that sets new standards and exceeds expectations." langDe="Bereit, deine Ideen in die Realität umzusetzen? Von der Konzeption bis zur Fertigstellung, lass uns etwas bauen, das neue Standards setzt und Erwartungen übertrifft." />
   <text name="contact_get_in_touch" langEn="Get In Touch" langDe="Kontakt aufnehmen" />
   <text name="contact_name" langEn="Name" langDe="Name" />
   <text name="contact_name_placeholder" langEn="Your Name" langDe="Dein Name" />

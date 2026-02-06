@@ -16,6 +16,18 @@ export function Timeline() {
       technologies: ["React", "TypeScript", "Tailwind CSS", "JavaScript"],
     },
     {
+      title: t("timeline_freelance_title"),
+      company: t("timeline_freelance_company"),
+      period: "2023 - Present",
+      description: [t("timeline_freelance_desc1"), t("timeline_freelance_desc2")],
+      achievements: [
+        t("timeline_freelance_achievement1"),
+        t("timeline_freelance_achievement2"),
+      ],
+      technologies: ["React", "Next.js", "Node.js", "Tailwind CSS", "FastAPI"],
+      website: "https://nh-webdev.de/",
+    },
+    {
       title: t("timeline_college_title"),
       company: t("timeline_college"),
       period: "2021 - 2023",
@@ -66,9 +78,34 @@ export function Timeline() {
                     <h3 className="text-xl font-bold text-white mb-2">
                       {experience.title}
                     </h3>
-                    <div className="text-blue-400 mb-4 font-medium">
-                      {experience.company}
-                    </div>
+                    {experience.website ? (
+                      <a
+                        href={experience.website}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-400 mb-4 font-medium inline-flex items-center gap-1 hover:text-blue-300 transition"
+                      >
+                        {experience.company}
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth={1.5}
+                          stroke="currentColor"
+                          className="w-4 h-4"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                          />
+                        </svg>
+                      </a>
+                    ) : (
+                      <div className="text-blue-400 mb-4 font-medium">
+                        {experience.company}
+                      </div>
+                    )}
 
                     <div className="space-y-3">
                       <div>
@@ -145,9 +182,34 @@ export function Timeline() {
                     <h3 className="text-xl font-bold text-white mb-2">
                       {experience.title}
                     </h3>
-                    <div className="text-blue-400 mb-4 font-medium">
-                      {experience.company}
-                    </div>
+                    {experience.website ? (
+                      <a
+                        href={experience.website}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-400 mb-4 font-medium inline-flex items-center gap-1 hover:text-blue-300 transition"
+                      >
+                        {experience.company}
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth={1.5}
+                          stroke="currentColor"
+                          className="w-4 h-4"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                          />
+                        </svg>
+                      </a>
+                    ) : (
+                      <div className="text-blue-400 mb-4 font-medium">
+                        {experience.company}
+                      </div>
+                    )}
 
                     <div className="space-y-3">
                       <div>

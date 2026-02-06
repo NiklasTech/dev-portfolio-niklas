@@ -3,7 +3,7 @@
 <!-- Hero Section -->
   <text name="hero_greeting" langEn="Hi, I'm Niklas" langDe="Hi, ich bin Niklas" />
   <text name="hero_title" langEn="Full Stack Developer with a focus on clean architecture and real-world usability" langDe="Full Stack Developer mit Fokus auf klare Architektur und praxisnahe Anwendungen" />
-  <text name="hero_description" langEn="I build reliable and efficient web applications with a strong emphasis on clean code, performance, and user experience. Using tools like React, Next.js, and Node.js, I turn complex requirements into intuitive and maintainable solutions." langDe="Ich entwickle zuverlässige und performante Webanwendungen – mit klarem Fokus auf sauberen Code, Effizienz und Nutzerfreundlichkeit. Mit Technologien wie React, Next.js und Node.js setze ich komplexe Anforderungen in intuitive, wartbare Lösungen um." />
+  <text name="hero_description" langEn="I build reliable and efficient web applications with a strong emphasis on clean code, performance, and user experience. Using tools like React, Next.js, and Node.js, I turn complex requirements into intuitive and maintainable solutions." langDe="Ich entwickle zuverlässige und performante Webanwendungen. Mit klarem Fokus auf sauberen Code, Effizienz und Nutzerfreundlichkeit. Mit Technologien wie React, Next.js und Node.js setze ich komplexe Anforderungen in intuitive, wartbare Lösungen um." />
   <text name="hero_cta_work" langEn="Let’s Connect" langDe="Lass uns austauschen" />
   <text name="hero_view_projects" langEn="See My Work" langDe="Projekte ansehen" />
   <text name="hero_view_skills" langEn="View My Skills" langDe="Fähigkeiten ansehen" />
@@ -85,6 +85,12 @@
   <text name="timeline_college_desc2" langEn="Learned fundamentals of programming and software development" langDe="Erlernte Grundlagen der Programmierung und Softwareentwicklung" />
   <text name="timeline_college_achievement1" langEn="Gained solid foundation in computer science principles" langDe="Solide Grundlage in Informatik-Prinzipien erworben" />
   <text name="timeline_college_achievement2" langEn="Developed passion for frontend development and UI/UX design" langDe="Leidenschaft für Frontend-Entwicklung und UI/UX-Design entwickelt" />
+  <text name="timeline_freelance_title" langEn="Freelance Web Developer" langDe="Freiberuflicher Web-Entwickler" />
+  <text name="timeline_freelance_company" langEn="Small Business / Freelance" langDe="Kleingewerbe / Freiberuflich" />
+  <text name="timeline_freelance_desc1" langEn="Developing custom web solutions for businesses. From simple landing pages to full-stack applications" langDe="Entwicklung maßgeschneiderter Web-Lösungen für Unternehmen. Von einfachen Onepagern bis zu Full-Stack-Applikationen" />
+  <text name="timeline_freelance_desc2" langEn="Creating e-commerce platforms, business websites, blogs, and website redesigns tailored to client needs" langDe="Erstellung von Onlineshops, Firmenwebsites, Blogseiten und Website-Überarbeitungen nach Kundenwünschen" />
+  <text name="timeline_freelance_achievement1" langEn="Building scalable web solutions from concept to deployment" langDe="Entwicklung skalierbarer Web-Lösungen von der Konzeption bis zur Bereitstellung" />
+  <text name="timeline_freelance_achievement2" langEn="Consulting clients on technology choices and best practices" langDe="Beratung von Kunden zu Technologie-Entscheidungen und Best Practices" />
   <text name="timeline_learning_focus" langEn="Learning Focus" langDe="Lernfokus" />
   <text name="timeline_learning1" langEn="Advanced React Patterns &amp; Architecture" langDe="Erweiterte React-Patterns &amp; Architektur" />
   <text name="timeline_learning2" langEn="Modern CSS Frameworks &amp; Animations" langDe="Moderne CSS-Frameworks &amp; Animationen" />
