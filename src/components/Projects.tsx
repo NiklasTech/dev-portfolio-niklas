@@ -1,303 +1,227 @@
-import { useTranslation } from "../hooks/useTranslation";
 import { useState } from "react";
+import { useTranslation } from "../hooks/useTranslation";
+import { SectionHeader } from "./SectionHeader";
+import { Reveal } from "./Reveal";
+
+type ProjectType = "own" | "client" | "template";
+
+interface Project {
+  id: string;
+  title: string;
+  descKey: string;
+  type: ProjectType;
+  tags: string[];
+  images: string[];
+  liveUrl: string;
+  codeUrl?: string;
+  featured?: boolean;
+}
+
+const PROJECTS: Project[] = [
+  {
+    id: "pragma",
+    title: "Pragma",
+    descKey: "project_pragma_desc",
+    type: "own",
+    tags: ["Tauri 2", "Rust", "React 19", "TypeScript"],
+    images: ["/screenshots/pragma-1.png", "/screenshots/pragma-2.png"],
+    liveUrl: "https://pragma-zeta-two.vercel.app",
+    codeUrl: "https://github.com/NiklasTech/pragma",
+    featured: true,
+  },
+  {
+    id: "vehiclelab",
+    title: "Vehicle Lab",
+    descKey: "project_vehiclelab_desc",
+    type: "client",
+    tags: [],
+    images: ["/screenshots/vehicle-lab.png"],
+    liveUrl: "https://vehicle-lab.de/",
+  },
+  {
+    id: "fairdress",
+    title: "Fairdress",
+    descKey: "project_fairdress_desc",
+    type: "client",
+    tags: [],
+    images: ["/screenshots/fairdress.png"],
+    liveUrl: "https://fairdress.de/",
+  },
+  {
+    id: "template-friseur",
+    title: "Friseur / Barbershop",
+    descKey: "project_template_friseur_desc",
+    type: "template",
+    tags: [],
+    images: ["/screenshots/template-friseur.png"],
+    liveUrl: "https://template-friseur.vercel.app/",
+  },
+  {
+    id: "template-blog",
+    title: "Blog",
+    descKey: "project_template_blog_desc",
+    type: "template",
+    tags: [],
+    images: ["/screenshots/template-blog.png"],
+    liveUrl: "https://template-blog-phi.vercel.app/",
+  },
+  {
+    id: "template-bau",
+    title: "Bauunternehmen",
+    descKey: "project_template_bau_desc",
+    type: "template",
+    tags: [],
+    images: ["/screenshots/template-bau.png"],
+    liveUrl: "https://bauunternehmen.vercel.app/",
+  },
+];
+
+function ProjectImage({ project, eager = false }: { project: Project; eager?: boolean }) {
+  const [index, setIndex] = useState(0);
+  const [failedSrcs, setFailedSrcs] = useState<string[]>([]);
+  const hasMultiple = project.images.length > 1;
+  const currentSrc = project.images[index];
+  const currentFailed = failedSrcs.includes(currentSrc);
+
+  return (
+    <div className="relative border border-line overflow-hidden bg-paper">
+      {currentFailed ? (
+        <div className="w-full aspect-[16/10] flex items-center justify-center border-line bg-line/30">
+          <span className="font-display text-2xl text-muted">{project.title}</span>
+        </div>
+      ) : (
+        <img
+          src={currentSrc}
+          alt={`${project.title} Screenshot`}
+          loading={eager ? "eager" : "lazy"}
+          onError={() => setFailedSrcs((prev) => [...prev, currentSrc])}
+          className="w-full aspect-[16/10] object-cover object-top"
+        />
+      )}
+      {hasMultiple && (
+        <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex items-center gap-2">
+          <button
+            type="button"
+            aria-label="Previous image"
+            onClick={() =>
+              setIndex((index - 1 + project.images.length) % project.images.length)
+            }
+            className="bg-paper/90 border border-line text-ink px-2 py-1 text-xs"
+          >
+            &#8592;
+          </button>
+          {project.images.map((_, i) => (
+            <button
+              key={i}
+              type="button"
+              aria-label={`Go to image ${i + 1}`}
+              onClick={() => setIndex(i)}
+              className={`w-2 h-2 rounded-full ${
+                index === i ? "bg-accent" : "bg-line"
+              }`}
+            />
+          ))}
+          <button
+            type="button"
+            aria-label="Next image"
+            onClick={() => setIndex((index + 1) % project.images.length)}
+            className="bg-paper/90 border border-line text-ink px-2 py-1 text-xs"
+          >
+            &#8594;
+          </button>
+        </div>
+      )}
+    </div>
+  );
+}
+
+function ProjectLinks({ project }: { project: Project }) {
+  const { t } = useTranslation();
+  const linkClass =
+    "text-sm font-medium text-ink underline underline-offset-4 decoration-line hover:decoration-accent hover:text-accent transition-colors";
+
+  return (
+    <div className="flex gap-6 mt-6">
+      <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className={linkClass}>
+        {t("project_visit")}
+      </a>
+      {project.codeUrl && (
+        <a href={project.codeUrl} target="_blank" rel="noopener noreferrer" className={linkClass}>
+          {t("project_code")}
+        </a>
+      )}
+    </div>
+  );
+}
 
 export function Projects() {
   const { t } = useTranslation();
-  const [currentImageIndex, setCurrentImageIndex] = useState<{
-    [key: number]: number;
-  }>({});
 
-  const projects = [
-    {
-      title: t("project_authron_title"),
-      description: t("project_authron_desc"),
-      tags: [
-        "React",
-        "TypeScript",
-        "FastAPI",
-        "SQLite",
-        "Tailwind CSS",
-        "2FA/TOTP",
-      ],
-      images: [
-        "/screenshots/authron-login.png",
-        "/screenshots/authron-dashboard.png",
-        "/screenshots/authron-settings.png",
-        "/screenshots/authron-generator.png",
-      ],
-      demoLink: null,
-      codeLink: "https://github.com/niklastech/authron",
-      featured: true,
-    },
-    {
-      title: t("project_portfolio_title"),
-      description: t("project_portfolio_desc"),
-      tags: ["React", "TypeScript", "Tailwind CSS", "Vite"],
-      images: [
-        "/screenshots/portfolio-hero.png",
-        "/screenshots/portfolio-terminal.png",
-        "/screenshots/portfolio-projects.png",
-      ],
-      demoLink: window.location.origin,
-      codeLink: "https://github.com/yourusername/portfolio",
-      featured: false,
-    },
-  ];
-
-  const nextImage = (projectIndex: number, totalImages: number) => {
-    setCurrentImageIndex((prev) => ({
-      ...prev,
-      [projectIndex]: ((prev[projectIndex] || 0) + 1) % totalImages,
-    }));
+  const typeLabels: Record<ProjectType, string> = {
+    own: t("project_type_own"),
+    client: t("project_type_client"),
+    template: t("project_type_template"),
   };
 
-  const prevImage = (projectIndex: number, totalImages: number) => {
-    setCurrentImageIndex((prev) => ({
-      ...prev,
-      [projectIndex]:
-        ((prev[projectIndex] || 0) - 1 + totalImages) % totalImages,
-    }));
-  };
-
-  const setImageIndex = (projectIndex: number, imageIndex: number) => {
-    setCurrentImageIndex((prev) => ({
-      ...prev,
-      [projectIndex]: imageIndex,
-    }));
-  };
+  const featured = PROJECTS.find((p) => p.featured)!;
+  const rest = PROJECTS.filter((p) => !p.featured);
 
   return (
-    <section id="projects" className="py-24 section-alt">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <p className="text-green-500 font-mono mb-2">my_work.js</p>
-          <h2 className="text-4xl font-bold text-white">
-            {t("projects_title")}
-          </h2>
-          <p className="text-gray-400 mt-4 max-w-3xl mx-auto">
-            {t("projects_description_real")}
+    <section id="projects" className="py-24 md:py-32">
+      <div className="max-w-6xl mx-auto px-6">
+        <Reveal>
+          <SectionHeader label={t("section_projects")} title={t("projects_title")} />
+          <p className="text-lg text-muted max-w-2xl -mt-8 mb-16">
+            {t("projects_intro")}
           </p>
-        </div>
+        </Reveal>
 
-        <div className="max-w-6xl mx-auto">
-          {projects.map((project, index) => (
-            <div
-              key={index}
-              className={`card mb-12 overflow-hidden transition-all hover:translate-y-[-5px] ${
-                project.featured
-                  ? "border-green-500/30 bg-gradient-to-br from-green-500/5 to-gray-900"
-                  : "bg-gradient-to-bl from-gray-900 to-gray-950"
-              } ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"}`}
-            >
-              {project.featured && (
-                <div className="absolute top-4 right-4 bg-green-500 text-black px-3 py-1 rounded-full text-xs font-bold">
-                  {t("project_featured")}
-                </div>
-              )}
-
-              <div
-                className={`flex flex-col ${
-                  index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-                } items-center`}
-              >
-                <div className="md:w-1/2 p-8">
-                  <h3 className="text-2xl font-bold text-white mb-3">
-                    {project.title}
-                  </h3>
-                  <p className="text-gray-300 mb-4">{project.description}</p>
-
-                  <div className="flex flex-wrap gap-2 mb-6">
-                    {project.tags.map((tag, tagIndex) => (
-                      <span
-                        key={tagIndex}
-                        className="px-3 py-1 bg-gray-800 text-green-400 rounded-full text-xs"
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-
-                  <div className="flex gap-4">
-                    {project.demoLink && project.demoLink !== "#" ? (
-                      <a
-                        href={project.demoLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-1 text-sm font-medium text-green-400 hover:text-green-300 transition-colors"
-                      >
-                        <span>{t("project_live_demo")}</span>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          strokeWidth={1.5}
-                          stroke="currentColor"
-                          className="w-4 h-4"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
-                          />
-                        </svg>
-                      </a>
-                    ) : (
-                      <span className="flex items-center gap-1 text-sm font-medium text-gray-500">
-                        <span>{t("project_no_demo")}</span>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          strokeWidth={1.5}
-                          stroke="currentColor"
-                          className="w-4 h-4"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M18.364 18.364A9 9 0 0 0 5.636 5.636m12.728 12.728A9 9 0 0 1 5.636 5.636m12.728 12.728L5.636 5.636"
-                          />
-                        </svg>
-                      </span>
-                    )}
-                    <a
-                      href={project.codeLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-1 text-sm font-medium text-gray-400 hover:text-white transition-colors"
-                    >
-                      <span>{t("project_view_code")}</span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth={1.5}
-                        stroke="currentColor"
-                        className="w-4 h-4"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"
-                        />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-
-                <div className="md:w-1/2 relative bg-gray-800">
-                  <div className="relative h-64 md:h-80 overflow-hidden">
-                    {project.images && project.images.length > 0 ? (
-                      <div className="relative h-full w-full">
-                        <img
-                          src={project.images[currentImageIndex[index] || 0]}
-                          alt={`${project.title} Screenshot`}
-                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                          onError={(e) => {
-                            e.currentTarget.style.display = "none";
-                            if (e.currentTarget.nextElementSibling) {
-                              (
-                                e.currentTarget
-                                  .nextElementSibling as HTMLElement
-                              ).style.display = "flex";
-                            }
-                          }}
-                        />
-                        {project.images.length > 1 && (
-                          <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex gap-2">
-                            <button
-                              className="bg-gray-900/70 text-white rounded-full px-2 py-1 text-xs"
-                              onClick={() =>
-                                prevImage(index, project.images.length)
-                              }
-                              aria-label="Previous image"
-                              type="button"
-                            >
-                              &#8592;
-                            </button>
-                            {project.images.map((_, imgIdx) => (
-                              <button
-                                key={imgIdx}
-                                className={`w-2 h-2 rounded-full ${
-                                  currentImageIndex[index] === imgIdx
-                                    ? "bg-green-400"
-                                    : "bg-gray-500"
-                                }`}
-                                onClick={() => setImageIndex(index, imgIdx)}
-                                aria-label={`Go to image ${imgIdx + 1}`}
-                                type="button"
-                              />
-                            ))}
-                            <button
-                              className="bg-gray-900/70 text-white rounded-full px-2 py-1 text-xs"
-                              onClick={() =>
-                                nextImage(index, project.images.length)
-                              }
-                              aria-label="Next image"
-                              type="button"
-                            >
-                              &#8594;
-                            </button>
-                          </div>
-                        )}
-                      </div>
-                    ) : (
-                      <div className="absolute inset-0 flex flex-col items-center justify-center text-gray-600 font-mono bg-gray-800">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          strokeWidth={1}
-                          stroke="currentColor"
-                          className="w-12 h-12 mb-4 text-gray-500"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="m2.25 15.75 5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
-                          />
-                        </svg>
-                        <span className="text-sm">
-                          {t("project_screenshot_coming")}
-                        </span>
-                      </div>
-                    )}
-                  </div>
-                </div>
-              </div>
+        <Reveal>
+          <article className="grid md:grid-cols-2 gap-10 items-start mb-24">
+            <ProjectImage project={featured} eager />
+            <div>
+              <p className="text-xs uppercase tracking-[0.2em] text-accent mb-3">
+                {t("project_featured")} · {typeLabels[featured.type]}
+              </p>
+              <h3 className="font-display text-3xl md:text-4xl text-ink mb-4">
+                {featured.title}
+              </h3>
+              <p className="text-muted leading-relaxed mb-6">
+                {t(featured.descKey)}
+              </p>
+              <ul className="flex flex-wrap gap-2">
+                {featured.tags.map((tag) => (
+                  <li
+                    key={tag}
+                    className="text-xs text-muted border border-line px-3 py-1"
+                  >
+                    {tag}
+                  </li>
+                ))}
+              </ul>
+              <ProjectLinks project={featured} />
             </div>
-          ))}
-        </div>
+          </article>
+        </Reveal>
 
-        <div className="text-center mt-12">
-          <div className="card p-6 max-w-2xl mx-auto">
-            <h3 className="text-xl font-bold text-white mb-4">
-              {t("projects_work_in_progress")}
-            </h3>
-            <p className="text-gray-400 mb-4">{t("projects_more_coming")}</p>
-            <a
-              href="https://github.com/NiklasTech"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-green-400 hover:text-green-300 transition-colors"
-            >
-              <span>{t("projects_github_follow")}</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-5 h-5"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-                />
-              </svg>
-            </a>
-          </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+          {rest.map((project, index) => (
+            <Reveal key={project.id} delay={(index % 3) * 100}>
+              <article>
+                <ProjectImage project={project} />
+                <p className="text-xs uppercase tracking-[0.2em] text-muted mt-5 mb-2">
+                  {typeLabels[project.type]}
+                </p>
+                <h3 className="font-display text-2xl text-ink mb-2">
+                  {project.title}
+                </h3>
+                <p className="text-sm text-muted leading-relaxed">
+                  {t(project.descKey)}
+                </p>
+                <ProjectLinks project={project} />
+              </article>
+            </Reveal>
+          ))}
         </div>
       </div>
     </section>

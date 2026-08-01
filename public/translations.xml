@@ -1,177 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <translations>
-<!-- Hero Section -->
-  <text name="hero_greeting" langEn="Hi, I'm Niklas" langDe="Hi, ich bin Niklas" />
-  <text name="hero_title" langEn="Full Stack Developer with a focus on clean architecture and real-world usability" langDe="Full Stack Developer mit Fokus auf klare Architektur und praxisnahe Anwendungen" />
-  <text name="hero_description" langEn="I build reliable and efficient web applications with a strong emphasis on clean code, performance, and user experience. Using tools like React, Next.js, and Node.js, I turn complex requirements into intuitive and maintainable solutions." langDe="Ich entwickle zuverlässige und performante Webanwendungen. Mit klarem Fokus auf sauberen Code, Effizienz und Nutzerfreundlichkeit. Mit Technologien wie React, Next.js und Node.js setze ich komplexe Anforderungen in intuitive, wartbare Lösungen um." />
-  <text name="hero_cta_work" langEn="Let’s Connect" langDe="Lass uns austauschen" />
-  <text name="hero_view_projects" langEn="See My Work" langDe="Projekte ansehen" />
-  <text name="hero_view_skills" langEn="View My Skills" langDe="Fähigkeiten ansehen" />
-
   <!-- Navigation -->
-  <text name="nav_home" langEn="Home" langDe="Startseite" />
-  <text name="nav_skills" langEn="Skills" langDe="Fähigkeiten" />
+  <text name="nav_about" langEn="About" langDe="Über mich" />
+  <text name="nav_skills" langEn="Skills" langDe="Skills" />
   <text name="nav_projects" langEn="Projects" langDe="Projekte" />
   <text name="nav_journey" langEn="Journey" langDe="Werdegang" />
   <text name="nav_contact" langEn="Contact" langDe="Kontakt" />
 
-  <!-- Terminal -->
-  <text name="terminal_welcome" langEn="Welcome to my interactive terminal!" langDe="Willkommen in meinem interaktiven Terminal!" />
-  <text name="terminal_try_commands" langEn="Try these commands:" langDe="Probiere diese Befehle aus:" />
-  <text name="terminal_help_available" langEn="Available commands:" langDe="Verfügbare Befehle:" />
-  <text name="terminal_help_about" langEn="Learn more about me" langDe="Erfahre mehr über mich" />
-  <text name="terminal_help_skills" langEn="View my technical skills" langDe="Zeige meine technischen Fähigkeiten" />
-  <text name="terminal_help_projects" langEn="Check out my projects" langDe="Schaue dir meine Projekte an" />
-  <text name="terminal_help_contact" langEn="Get my contact information" langDe="Hole dir meine Kontaktinformationen" />
-  <text name="terminal_help_clear" langEn="Clear the terminal" langDe="Terminal leeren" />
-  <text name="terminal_help_help" langEn="Show this help message" langDe="Diese Hilfe anzeigen" />
-  <text name="terminal_about_text"
-      langEn="I'm a passionate Full Stack Developer who believes great software starts with understanding real user needs. I specialize in building modern, scalable web applications that balance cutting-edge technology with practical usability. My approach focuses on writing clean, maintainable code and creating intuitive user experiences. When I'm not coding, you'll find me gaming, hitting the gym, or enjoying the outdoors. Currently diving deep into React ecosystems and backend architectures, I'm always excited to tackle complex challenges and learn emerging technologies that push the boundaries of what's possible on the web."
-      langDe="Ich bin ein leidenschaftlicher Full Stack Developer, der glaubt, dass großartige Software mit dem Verständnis echter Nutzerbedürfnisse beginnt. Ich spezialisiere mich auf moderne, skalierbare Webanwendungen, die modernste Technologie mit praktischer Benutzerfreundlichkeit vereinen. Mein Ansatz konzentriert sich auf sauberen, wartbaren Code und intuitive Benutzererfahrungen. Wenn ich nicht programmiere, findest du mich beim Zocken, im Fitnessstudio oder draußen in der Natur. Derzeit vertiefe ich mich in React-Ökosysteme und Backend-Architekturen und freue mich immer darauf, komplexe Herausforderungen anzugehen und neue Technologien zu erlernen." />
+  <!-- Hero -->
+  <text name="hero_role" langEn="Software Developer" langDe="Softwareentwickler" />
+  <text name="hero_intro" langEn="Developer from Heinsberg, Germany. Web applications, online shops or my own desktop tools: I build software that solves problems." langDe="Entwickler aus Heinsberg. Ob Webanwendung, Online-Shop oder eigenes Desktop-Tool: Ich baue Software, die Probleme löst." />
+  <text name="hero_cta_projects" langEn="View projects" langDe="Projekte ansehen" />
+  <text name="hero_cta_contact" langEn="Get in touch" langDe="Kontakt aufnehmen" />
 
-  <text name="terminal_skills_frontend" langEn="Frontend:" langDe="Frontend:" />
-  <text name="terminal_skills_backend" langEn="Backend:" langDe="Backend:" />
-  <text name="terminal_skills_tools" langEn="Tools &amp; Others:" langDe="Tools &amp; Sonstiges:" />
-  <text name="terminal_projects_recent" langEn="Recent Projects:" langDe="Neueste Projekte:" />
-  <text name="terminal_project_ecommerce" langEn="A full-stack online store with payment processing and inventory management." langDe="Ein vollständiger Online-Shop mit Zahlungsabwicklung und Lagerverwaltung." />
-  <text name="terminal_project_taskmanager" langEn="A productivity tool with drag-and-drop interface and real-time updates." langDe="Ein Produktivitätstool mit Drag-and-Drop-Interface und Echtzeit-Updates." />
-  <text name="terminal_project_portfolio" langEn="This interactive developer portfolio showcasing my work and skills." langDe="Dieses interaktive Entwickler-Portfolio zeigt meine Arbeit und Fähigkeiten." />
-  <text name="terminal_project_more" langEn="or click the Projects section to see more details." langDe="oder klicke auf den Projekte-Bereich, um mehr Details zu sehen." />
-  <text name="terminal_contact_info" langEn="Contact Information:" langDe="Kontaktinformationen:" />
-  <text name="terminal_contact_message" langEn="Feel free to reach out! I'm always open to new opportunities and collaborations." langDe="Zögere nicht, mich zu kontaktieren! Ich bin immer offen für neue Möglichkeiten und Kooperationen." />
-  <text name="terminal_navigate_projects" langEn="Navigating to Projects section..." langDe="Navigiere zum Projekte-Bereich..." />
-  <text name="terminal_navigate_skills" langEn="Navigating to Skills section..." langDe="Navigiere zum Fähigkeiten-Bereich..." />
-  <text name="terminal_navigate_contact" langEn="Navigating to Contact section..." langDe="Navigiere zum Kontakt-Bereich..." />
-  <text name="terminal_command_not_found" langEn="Command not recognized:" langDe="Befehl nicht erkannt:" />
-  <text name="terminal_type_help" langEn="Type help for available commands." langDe="Gib help ein für verfügbare Befehle." />
+  <!-- Section labels & titles -->
+  <text name="section_about" langEn="01 · About" langDe="01 · Über mich" />
+  <text name="section_skills" langEn="02 · Skills" langDe="02 · Skills" />
+  <text name="section_projects" langEn="03 · Projects" langDe="03 · Projekte" />
+  <text name="section_journey" langEn="04 · Journey" langDe="04 · Werdegang" />
+  <text name="section_contact" langEn="05 · Contact" langDe="05 · Kontakt" />
+  <text name="about_title" langEn="About me" langDe="Über mich" />
+  <text name="skills_title" langEn="Expertise" langDe="Kompetenzen" />
+  <text name="projects_title" langEn="Selected work" langDe="Ausgewählte Projekte" />
+  <text name="journey_title" langEn="My journey" langDe="Mein Werdegang" />
+  <text name="contact_title" langEn="Contact" langDe="Kontakt" />
 
-  <!-- Skills Section -->
-  <text name="skills_title" langEn="Skills &amp; Expertise" langDe="Fähigkeiten &amp; Expertise" />
-  <text name="skills_frontend_title" langEn="Frontend Skills" langDe="Frontend-Fähigkeiten" />
-  <text name="skills_backend_title" langEn="Backend Skills" langDe="Backend-Fähigkeiten" />
-  <text name="skills_ui_development" langEn="UI/UX Development" langDe="UI/UX-Entwicklung" />
-  <text name="skills_responsive_design" langEn="Responsive Design" langDe="Responsive Design" />
-  <text name="skills_animation" langEn="Animation &amp; Interaction" langDe="Animation &amp; Interaktion" />
-  <text name="skills_api_development" langEn="API Development" langDe="API-Entwicklung" />
-  <text name="skills_database_management" langEn="Database Management" langDe="Datenbank-Management" />
-  <text name="skills_cloud_services" langEn="Cloud Services" langDe="Cloud-Dienste" />
-  <text name="skills_other_technologies" langEn="Other Technologies &amp; Tools" langDe="Andere Technologien &amp; Tools" />
+  <!-- About -->
+  <text name="about_text_1" langEn="I am a developer, currently focused on web development but not limited to it, and I am open to full-time positions. Alongside my work, I have been running my own small web development business, NH-WebDev, since October 2025." langDe="Ich bin Entwickler, aktuell mit Schwerpunkt auf Webentwicklung, aber nicht darauf festgelegt, und offen für eine Festanstellung. Nebenbei betreibe ich seit Oktober 2025 mein eigenes Kleingewerbe NH-WebDev." />
+  <text name="about_text_2" langEn="I build customer projects from business websites to e-commerce platforms, and I develop my own tools like Pragma, an AI-native desktop IDE. What drives me: clean code, thoughtful design and software that solves real problems." langDe="Ich realisiere Kundenprojekte von der Unternehmenswebsite bis zur E-Commerce-Plattform und entwickle eigene Tools wie Pragma, eine AI-native Desktop-IDE. Was mich antreibt: sauberer Code, durchdachtes Design und Software, die echte Probleme löst." />
+  <text name="about_fact_location_label" langEn="Location" langDe="Standort" />
+  <text name="about_fact_location_value" langEn="Heinsberg, Germany" langDe="Heinsberg, Deutschland" />
+  <text name="about_fact_education_label" langEn="Education" langDe="Ausbildung" />
+  <text name="about_fact_education_value" langEn="IT specialist for application development" langDe="Fachinformatiker für Anwendungsentwicklung" />
+  <text name="about_fact_languages_label" langEn="Languages" langDe="Sprachen" />
+  <text name="about_fact_languages_value" langEn="German (native) · English (C1 level)" langDe="Deutsch (Muttersprache) · Englisch (C1-Niveau)" />
 
-  <!-- Projects Section -->
-  <text name="projects_title" langEn="Featured Projects" langDe="Ausgewählte Projekte" />
-  <text name="projects_description" langEn="Here are some of my recent projects that showcase my skills and experience. Each project is briefly described with links to code repositories and live demos." langDe="Hier sind einige meiner neuesten Projekte, die meine Fähigkeiten und Erfahrungen zeigen. Jedes Projekt wird kurz beschrieben mit Links zu Code-Repositories und Live-Demos." />
-  <text name="project_ecommerce_title" langEn="E-Commerce Platform" langDe="E-Commerce-Plattform" />
-  <text name="project_ecommerce_desc" langEn="A fully responsive e-commerce website with cart functionality and payment integration." langDe="Eine vollständig responsive E-Commerce-Website mit Warenkorb-Funktionalität und Zahlungsintegration." />
-  <text name="project_taskmanager_title" langEn="Task Management App" langDe="Aufgabenverwaltungs-App" />
-  <text name="project_taskmanager_desc" langEn="A productivity application for managing tasks with drag-and-drop functionality and real-time updates." langDe="Eine Produktivitätsanwendung zur Verwaltung von Aufgaben mit Drag-and-Drop-Funktionalität und Echtzeit-Updates." />
-  <text name="project_authron_title" langEn="Authron - Secure Password Manager" langDe="Authron - Sicherer Passwort-Manager" />
-  <text name="project_authron_desc" langEn="A modern, secure password manager with end-to-end encryption, 2FA support, team sharing, admin dashboard and automatic backups. Offers advanced features like TOTP generator and dark mode." langDe="Ein moderner, sicherer Passwort-Manager mit End-to-End-Verschlüsselung, 2FA-Unterstützung, Team-Sharing, Admin-Dashboard und automatischen Backups. Bietet erweiterte Funktionen wie TOTP-Generator und Dark Mode." />
-  <text name="project_live_demo" langEn="Live Demo" langDe="Live-Demo" />
-  <text name="project_view_code" langEn="View Code" langDe="Code anzeigen" />
-  <text name="projects_github_more" langEn="See more projects on GitHub" langDe="Weitere Projekte auf GitHub ansehen" />
+  <!-- Skills -->
+  <text name="skill_web_title" langEn="Web Development" langDe="Webentwicklung" />
+  <text name="skill_web_desc" langEn="Modern, responsive websites and web applications, from idea to launch." langDe="Moderne, responsive Websites und Webanwendungen, von der Idee bis zum Launch." />
+  <text name="skill_ecommerce_title" langEn="E-Commerce" langDe="E-Commerce" />
+  <text name="skill_ecommerce_desc" langEn="Online shops with product management, checkout and payment integration." langDe="Online-Shops mit Produktverwaltung, Checkout und Payment-Anbindung." />
+  <text name="skill_backend_title" langEn="Backend &amp; APIs" langDe="Backend &amp; APIs" />
+  <text name="skill_backend_desc" langEn="Server logic, databases and interfaces for performant applications." langDe="Serverlogik, Datenbanken und Schnittstellen für performante Anwendungen." />
+  <text name="skill_uiux_title" langEn="UI/UX Design" langDe="UI/UX Design" />
+  <text name="skill_uiux_desc" langEn="Thoughtful interfaces with a focus on usability and clear design." langDe="Durchdachte Interfaces mit Fokus auf Usability und klares Design." />
+  <text name="skill_software_title" langEn="Software Development" langDe="Softwareentwicklung" />
+  <text name="skill_software_desc" langEn="Custom tools and desktop applications, like the IDE Pragma." langDe="Eigene Tools und Desktop-Anwendungen, wie die IDE Pragma." />
+  <text name="skill_devops_title" langEn="Deployment &amp; Operations" langDe="Deployment &amp; Betrieb" />
+  <text name="skill_devops_desc" langEn="Hosting, CI/CD and performance optimization for production use." langDe="Hosting, CI/CD und Performance-Optimierung für den produktiven Einsatz." />
 
-  <!-- Timeline Section -->
-  <text name="timeline_title" langEn="My Career Journey" langDe="Mein Karriereweg" />
-  <text name="timeline_description" langEn="My professional path in web development and continuous learning journey." langDe="Mein beruflicher Weg in der Webentwicklung und kontinuierliche Lernreise." />
-  <text name="timeline_it_specialist" langEn="IT Specialist in Application Development" langDe="Fachinformatiker für Anwendungsentwicklung" />
-  <text name="timeline_current_position" langEn="Current Position" langDe="Aktuelle Position" />
-  <text name="timeline_it_desc1" langEn="Developing and maintaining web applications with modern JavaScript frameworks" langDe="Entwicklung und Wartung von Webanwendungen mit modernen JavaScript-Frameworks" />
-  <text name="timeline_it_desc2" langEn="Focus on user experience and responsive design patterns" langDe="Fokus auf Benutzererfahrung und responsive Design-Muster" />
-  <text name="timeline_it_achievement1" langEn="Implementing clean, scalable frontend architectures" langDe="Implementierung sauberer, skalierbarer Frontend-Architekturen" />
-  <text name="timeline_it_achievement2" langEn="Collaborating with teams to deliver high-quality applications" langDe="Zusammenarbeit mit Teams zur Bereitstellung hochwertiger Anwendungen" />
-  <text name="timeline_college_title" langEn="Advanced Technical College Entrance Qualification" langDe="Fachhochschulreife" />
-  <text name="timeline_college" langEn="Technical College" langDe="Berufsschule" />
-  <text name="timeline_college_desc1" langEn="Specialized in Computer Science with focus on web development" langDe="Spezialisierung auf Informatik mit Fokus auf Webentwicklung" />
-  <text name="timeline_college_desc2" langEn="Learned fundamentals of programming and software development" langDe="Erlernte Grundlagen der Programmierung und Softwareentwicklung" />
-  <text name="timeline_college_achievement1" langEn="Gained solid foundation in computer science principles" langDe="Solide Grundlage in Informatik-Prinzipien erworben" />
-  <text name="timeline_college_achievement2" langEn="Developed passion for frontend development and UI/UX design" langDe="Leidenschaft für Frontend-Entwicklung und UI/UX-Design entwickelt" />
-  <text name="timeline_freelance_title" langEn="Freelance Web Developer" langDe="Freiberuflicher Web-Entwickler" />
-  <text name="timeline_freelance_company" langEn="Small Business / Freelance" langDe="Kleingewerbe / Freiberuflich" />
-  <text name="timeline_freelance_desc1" langEn="Developing custom web solutions for businesses. From simple landing pages to full-stack applications" langDe="Entwicklung maßgeschneiderter Web-Lösungen für Unternehmen. Von einfachen Onepagern bis zu Full-Stack-Applikationen" />
-  <text name="timeline_freelance_desc2" langEn="Creating e-commerce platforms, business websites, blogs, and website redesigns tailored to client needs" langDe="Erstellung von Onlineshops, Firmenwebsites, Blogseiten und Website-Überarbeitungen nach Kundenwünschen" />
-  <text name="timeline_freelance_achievement1" langEn="Building scalable web solutions from concept to deployment" langDe="Entwicklung skalierbarer Web-Lösungen von der Konzeption bis zur Bereitstellung" />
-  <text name="timeline_freelance_achievement2" langEn="Consulting clients on technology choices and best practices" langDe="Beratung von Kunden zu Technologie-Entscheidungen und Best Practices" />
-  <text name="timeline_learning_focus" langEn="Learning Focus" langDe="Lernfokus" />
-  <text name="timeline_learning1" langEn="Advanced React Patterns &amp; Architecture" langDe="Erweiterte React-Patterns &amp; Architektur" />
-  <text name="timeline_learning2" langEn="Modern CSS Frameworks &amp; Animations" langDe="Moderne CSS-Frameworks &amp; Animationen" />
-  <text name="timeline_learning3" langEn="Progressive Web Application Development" langDe="Progressive Web Application-Entwicklung" />
-  <text name="timeline_professional_goals" langEn="Professional Goals" langDe="Berufliche Ziele" />
-  <text name="timeline_goal1" langEn="Master modern frontend frameworks and tools" langDe="Moderne Frontend-Frameworks und Tools lernen" />
-  <text name="timeline_goal2" langEn="Contribute to open-source projects" langDe="Zu Open-Source-Projekten beitragen" />
-  <text name="timeline_goal3" langEn="Build innovative web applications" langDe="Innovative Webanwendungen entwickeln" />
-  <text name="timeline_responsibilities" langEn="Responsibilities" langDe="Verantwortlichkeiten" />
-  <text name="timeline_key_focus" langEn="Key Focus Areas" langDe="Hauptfokusbereiche" />
+  <!-- Projects -->
+  <text name="projects_intro" langEn="Own tools, client projects from my business NH-WebDev and demo templates." langDe="Eigene Tools, Kundenprojekte aus meinem Gewerbe NH-WebDev und Demo-Templates." />
+  <text name="project_featured" langEn="Featured project" langDe="Featured-Projekt" />
+  <text name="project_type_own" langEn="Own project" langDe="Eigenprojekt" />
+  <text name="project_type_client" langEn="Client project · NH-WebDev" langDe="Kundenprojekt · NH-WebDev" />
+  <text name="project_type_template" langEn="Template" langDe="Template" />
+  <text name="project_visit" langEn="Visit website" langDe="Website besuchen" />
+  <text name="project_code" langEn="View code" langDe="Code ansehen" />
+  <text name="project_pragma_desc" langEn="AI-native desktop IDE with integrated terminal, Git and Docker integration. Built with Tauri 2, Rust and React." langDe="AI-native Desktop-IDE mit integriertem Terminal sowie Git- und Docker-Integration. Gebaut mit Tauri 2, Rust und React." />
+  <text name="project_vehiclelab_desc" langEn="Website for an automotive appraisal company near Aachen. Clear presentation of services, fast contact options, fully responsive." langDe="Website für ein KFZ-Sachverständigenbüro im Raum Aachen. Klare Leistungsdarstellung, schnelle Kontaktmöglichkeiten, voll responsiv." />
+  <text name="project_fairdress_desc" langEn="E-commerce shop for verified secondhand designer fashion with product management and checkout." langDe="E-Commerce-Shop für geprüfte Secondhand-Designerkleidung mit Produktverwaltung und Checkout." />
+  <text name="project_template_friseur_desc" langEn="Demo template for barbershops and hair salons." langDe="Demo-Template für Friseursalons und Barbershops." />
+  <text name="project_template_blog_desc" langEn="Demo template for blogs and editorial websites." langDe="Demo-Template für Blogs und redaktionelle Websites." />
+  <text name="project_template_bau_desc" langEn="Demo template for construction companies." langDe="Demo-Template für Bauunternehmen." />
 
-  <!-- Testimonials Section -->
-  <text name="testimonials_title" langEn="Success Stories &amp; Collaborations" langDe="Erfolgsgeschichten &amp; Kooperationen" />
-  <text name="testimonials_subtitle" langEn="Building Trust Through Excellence in Every Project" langDe="Vertrauen aufbauen durch Exzellenz in jedem Projekt" />
-  <text name="testimonial1_quote" langEn="Working with YourName was truly exceptional. As their team lead, I was consistently impressed by their growth mindset - they don't just learn new skills, but seek out the best practices in any technology they work with, a rare quality among developers. Their attention to detail speaks for itself in their work, and what stands out most is how they solve complex problems with minimal guidance." langDe="Die Zusammenarbeit mit YourName war wirklich außergewöhnlich. Als Teamleiter war ich durchweg beeindruckt von ihrer Wachstumsmentalität - sie lernen nicht nur neue Fähigkeiten, sondern suchen die besten Praktiken in jeder Technologie, mit der sie arbeiten, eine seltene Eigenschaft unter Entwicklern. Ihre Liebe zum Detail spricht für sich in ihrer Arbeit, und was am meisten hervorsticht, ist, wie sie komplexe Probleme mit minimaler Anleitung lösen." />
-  <text name="testimonial1_name" langEn="Alex Johnson" langDe="Alex Johnson" />
-  <text name="testimonial1_position" langEn="Team Lead at TechCorp" langDe="Teamleiter bei TechCorp" />
-  <text name="testimonial2_quote" langEn="YourName delivered our project not just on time, but with features that exceeded our expectations. Their ability to understand our business needs and translate them into technical solutions made the development process smooth and the end result exceptional. I would highly recommend them for any challenging web development project." langDe="YourName hat unser Projekt nicht nur pünktlich geliefert, sondern mit Funktionen, die unsere Erwartungen übertroffen haben. Ihre Fähigkeit, unsere Geschäftsanforderungen zu verstehen und sie in technische Lösungen umzusetzen, machte den Entwicklungsprozess reibungslos und das Endergebnis außergewöhnlich. Ich würde sie für jedes anspruchsvolle Webentwicklungsprojekt sehr empfehlen." />
-  <text name="testimonial2_name" langEn="Sarah Williams" langDe="Sarah Williams" />
-  <text name="testimonial2_position" langEn="CEO at StartupX" langDe="CEO bei StartupX" />
-  <text name="testimonial3_quote" langEn="The application YourName built for us has significantly improved our internal workflows. What impressed me most was not just their technical skills, but their ability to suggest improvements to our initial requirements that ended up saving us time and money. A true professional who cares about delivering value." langDe="Die Anwendung, die YourName für uns entwickelt hat, hat unsere internen Arbeitsabläufe erheblich verbessert. Was mich am meisten beeindruckt hat, waren nicht nur ihre technischen Fähigkeiten, sondern ihre Fähigkeit, Verbesserungen zu unseren ursprünglichen Anforderungen vorzuschlagen, die uns letztendlich Zeit und Geld gespart haben. Ein echter Profi, der sich darum kümmert, Wert zu liefern." />
-  <text name="testimonial3_name" langEn="Michael Chen" langDe="Michael Chen" />
-  <text name="testimonial3_position" langEn="Product Manager at InnovateCo" langDe="Produktmanager bei InnovateCo" />
+  <!-- NH-WebDev band -->
+  <text name="nhwd_text" langEn="Self-employed web developer since October 2025." langDe="Selbstständiger Webentwickler seit Oktober 2025." />
+  <text name="nhwd_services" langEn="Web development · E-Commerce · Custom development" langDe="Webentwicklung · E-Commerce · Entwicklung nach Auftrag" />
+  <text name="nhwd_link" langEn="nh-webdev.de" langDe="nh-webdev.de" />
 
-  <!-- Contact Section -->
-  <text name="contact_title" langEn="Let's create something extraordinary together" langDe="Lass uns gemeinsam etwas Außergewöhnliches schaffen" />
-  <text name="contact_description" langEn="Ready to transform your ideas into reality? From concept to completion, let's build something that sets new standards and exceeds expectations." langDe="Bereit, deine Ideen in die Realität umzusetzen? Von der Konzeption bis zur Fertigstellung - lass uns etwas bauen, das neue Standards setzt und Erwartungen übertrifft." />
-  <text name="contact_get_in_touch" langEn="Get In Touch" langDe="Kontakt aufnehmen" />
-  <text name="contact_name" langEn="Name" langDe="Name" />
-  <text name="contact_name_placeholder" langEn="Your Name" langDe="Dein Name" />
-  <text name="contact_email" langEn="Email" langDe="E-Mail" />
-  <text name="contact_email_placeholder" langEn="your.email@example.com" langDe="deine.email@beispiel.de" />
-  <text name="contact_message" langEn="Message" langDe="Nachricht" />
-  <text name="contact_message_placeholder" langEn="Tell me about your project..." langDe="Erzähle mir von deinem Projekt..." />
-  <text name="contact_submit" langEn="Let's Connect" langDe="Lass uns vernetzen" />
-  <text name="contact_information" langEn="Contact Information" langDe="Kontaktinformationen" />
+  <!-- Journey -->
+  <text name="journey_nhwd_period" langEn="Since Oct 2025" langDe="Seit Okt. 2025" />
+  <text name="journey_nhwd_title" langEn="NH-WebDev · Small business (part-time)" langDe="NH-WebDev · Kleingewerbe (nebenberuflich)" />
+  <text name="journey_nhwd_desc" langEn="Design and development of web applications, e-commerce platforms and custom client work." langDe="Konzeption und Entwicklung von Webanwendungen, E-Commerce-Plattformen und individueller Auftragsentwicklung." />
+  <text name="journey_ausbildung_period" langEn="2023 - 2026" langDe="2023 - 2026" />
+  <text name="journey_ausbildung_title" langEn="IT specialist for application development · AixperSoft" langDe="Fachinformatiker für Anwendungsentwicklung · AixperSoft" />
+  <text name="journey_ausbildung_desc" langEn="Three-year vocational training as an IT specialist for application development, successfully completed." langDe="Dreijährige betriebliche Ausbildung zum Fachinformatiker für Anwendungsentwicklung, erfolgreich abgeschlossen." />
+  <text name="journey_fhr_period" langEn="2021 - 2023" langDe="2021 - 2023" />
+  <text name="journey_fhr_title" langEn="Fachhochschulreife · Vocational school" langDe="Fachhochschulreife · Berufsschule" />
+  <text name="journey_fhr_desc" langEn="Specialization in computer science with a focus on web development. Learned the fundamentals of programming and software development and discovered a passion for frontend development and UI/UX design." langDe="Spezialisierung auf Informatik mit Fokus auf Webentwicklung. Grundlagen der Programmierung und Softwareentwicklung erlernt und die Leidenschaft für Frontend-Entwicklung und UI/UX-Design entdeckt." />
+
+  <!-- Contact -->
+  <text name="contact_intro" langEn="Whether it is a full-time position or a project: the easiest way to reach me is by email." langDe="Ob Festanstellung oder Projekt: Am einfachsten erreichst du mich per E-Mail." />
+  <text name="contact_email_cta" langEn="Write an email" langDe="E-Mail schreiben" />
+  <text name="contact_info_title" langEn="Contact information" langDe="Kontaktinformationen" />
   <text name="contact_email_label" langEn="Email" langDe="E-Mail" />
   <text name="contact_location_label" langEn="Location" langDe="Standort" />
-  <text name="contact_location_value" langEn="North Rhine-Westphalia, Germany" langDe="Nordrhein-Westfalen, Deutschland" />
+  <text name="contact_location_value" langEn="Heinsberg, Germany" langDe="Heinsberg, Deutschland" />
   <text name="contact_availability_label" langEn="Availability" langDe="Verfügbarkeit" />
-  <text name="contact_availability_value" langEn="Open to Opportunities" langDe="Offen für Möglichkeiten" />
-  <text name="contact_social_media" langEn="Connect on Social Media" langDe="In sozialen Medien vernetzen" />
+  <text name="contact_availability_value" langEn="Open to full-time positions and freelance projects" langDe="Offen für Festanstellung und Freelance-Projekte" />
+  <text name="contact_social_title" langEn="Social" langDe="Social" />
 
-  <!-- Common UI Elements -->
+  <!-- Footer & misc -->
+  <text name="footer_text" langEn="© 2026 Niklas Häußler. All rights reserved." langDe="© 2026 Niklas Häußler. Alle Rechte vorbehalten." />
   <text name="loading" langEn="Loading..." langDe="Laden..." />
-  <text name="error" langEn="Error" langDe="Fehler" />
-  <text name="success" langEn="Success" langDe="Erfolg" />
-  <text name="close" langEn="Close" langDe="Schließen" />
-  <text name="open" langEn="Open" langDe="Öffnen" />
-  <text name="next" langEn="Next" langDe="Weiter" />
-  <text name="previous" langEn="Previous" langDe="Zurück" />
-  <text name="read_more" langEn="Read More" langDe="Mehr lesen" />
-  <text name="learn_more" langEn="Learn More" langDe="Mehr erfahren" />
-
-  <text name="projects_description_real" langEn="Here are my current projects that showcase my skills and development journey. Each project represents real work and learning experiences." langDe="Hier sind meine aktuellen Projekte, die meine Fähigkeiten und Entwicklungsreise zeigen. Jedes Projekt repräsentiert echte Arbeit und Lernerfahrungen." />
-  <text name="project_portfolio_title" langEn="Developer Portfolio" langDe="Entwickler-Portfolio" />
-  <text name="project_portfolio_desc" langEn="This interactive portfolio website built with React, TypeScript and modern web technologies. Features include terminal simulation, matrix background, and multi-language support." langDe="Diese interaktive Portfolio-Website, gebaut mit React, TypeScript und modernen Web-Technologien. Features beinhalten Terminal-Simulation, Matrix-Hintergrund und Multi-Sprach-Unterstützung." />
-  <text name="project_featured" langEn="Featured" langDe="Hervorgehoben" />
-  <text name="project_no_demo" langEn="No Public Demo" langDe="Keine öffentliche Demo" />
-  <text name="project_screenshot_coming" langEn="Screenshot coming soon" langDe="Screenshot kommt bald" />
-  <text name="projects_work_in_progress" langEn="More Projects Coming Soon" langDe="Weitere Projekte kommen bald" />
-  <text name="projects_more_coming" langEn="I'm constantly working on new projects and learning new technologies. Follow my GitHub to stay updated on my latest work." langDe="Ich arbeite ständig an neuen Projekten und lerne neue Technologien. Folge meinem GitHub, um über meine neueste Arbeit auf dem Laufenden zu bleiben." />
-  <text name="projects_github_follow" langEn="Follow my progress on GitHub" langDe="Verfolge meinen Fortschritt auf GitHub" />
-
-  <text name="contact_sending" langEn="Sending..." langDe="Sende..." />
-  <text name="contact_success_message" langEn="Thank you! Your message has been sent successfully." langDe="Vielen Dank! Deine Nachricht wurde erfolgreich gesendet." />
-  <text name="contact_error_message" langEn="Sorry, there was an error sending your message. Please try again later." langDe="Entschuldigung, beim Senden deiner Nachricht ist ein Fehler aufgetreten. Bitte versuche es später erneut." />
-  <text name="contact_error_required_fields" langEn="Please fill in all required fields." langDe="Bitte fülle alle Pflichtfelder aus." />
-  <text name="contact_subject" langEn="Subject" langDe="Betreff" />
-  <text name="contact_subject_placeholder" langEn="What's this about?" langDe="Worum geht es?" />
-
-  <text name="contact_rate_limit_exceeded" langEn="Rate limit exceeded. You can send {0} emails per hour. Try again in {1} minutes." langDe="Sendelimit überschritten. Du kannst {0} E-Mails pro Stunde senden. Versuche es in {1} Minuten erneut." />
-  <text name="contact_rate_limit_cooldown" langEn="Please wait {0} minutes before sending another email." langDe="Bitte warte {0} Minuten, bevor du eine weitere E-Mail sendest." />
-  <text name="contact_rate_limit_generic" langEn="Rate limit exceeded." langDe="Sendelimit überschritten." />
-  <text name="contact_error_name_length" langEn="Name must be at least 2 characters long." langDe="Der Name muss mindestens 2 Zeichen lang sein." />
-  <text name="contact_error_message_length" langEn="Message must be at least 10 characters long." langDe="Die Nachricht muss mindestens 10 Zeichen lang sein." />
-  <text name="contact_service_not_configured" langEn="Email service is not properly configured." langDe="Der E-Mail-Dienst ist nicht richtig konfiguriert." />
-  <text name="contact_success_with_remaining" langEn="You can send {0} more email(s) in the next hour." langDe="Du kannst in der nächsten Stunde noch {0} weitere E-Mail(s) senden." />
-  <text name="contact_success_limit_reached" langEn="You've reached the hourly email limit." langDe="Du hast das stündliche E-Mail-Limit erreicht." />
-
-  <text name="contact_freelance_title" langEn="Looking for a Web Developer?" langDe="Suchst du einen Web-Entwickler?" />
-  <text name="contact_freelance_description" langEn="Beyond my personal projects, I also develop custom web solutions for businesses through my small business. I offer web development services including websites, e-commerce platforms, and custom applications." langDe="Neben meinen persönlichen Projekten entwickle ich auch maßgeschneiderte Web-Lösungen für Unternehmen über mein Kleingewerbe. Ich biete Web-Entwicklungs-Services an, einschließlich Websites, E-Commerce-Plattformen und Custom Applications." />
-  <text name="contact_freelance_cta" langEn="View Services" langDe="Services anschauen" />
 </translations>

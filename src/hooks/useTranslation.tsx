@@ -42,7 +42,12 @@ export function TranslationProvider({ children }: TranslationProviderProps) {
   const [translations, setTranslations] =
     useState<Translations>(emptyTranslations);
   const [isLoading, setIsLoading] = useState(true);
-  const [, setError] = useState<string | null>(null);
+  const [error, setError] = useState<string | null>(null);
+
+  // Keep the HTML lang attribute in sync for accessibility
+  useEffect(() => {
+    document.documentElement.lang = language;
+  }, [language]);
 
   // Load language from localStorage
   useEffect(() => {
@@ -63,23 +68,8 @@ export function TranslationProvider({ children }: TranslationProviderProps) {
         setTranslations(loadedTranslations);
       } catch (error) {
         console.error("Failed to initialize translations:", error);
-        setError("Failed to load translations. Using fallback text.");
-
-        // Set minimal fallback translations
-        setTranslations({
-          en: {
-            loading: "Loading...",
-            error: "An error occurred",
-            hero_greeting: "Hi, I am Niklas",
-            hero_title: "Full Stack Developer",
-          },
-          de: {
-            loading: "Laden...",
-            error: "Ein Fehler ist aufgetreten",
-            hero_greeting: "Hi, ich bin Niklas",
-            hero_title: "Full Stack Entwickler",
-          },
-        });
+        setError("Failed to load translations.");
+        setTranslations(emptyTranslations);
       } finally {
         setIsLoading(false);
       }
@@ -115,7 +105,7 @@ export function TranslationProvider({ children }: TranslationProviderProps) {
     language,
     changeLanguage,
     isLoading,
-    error: null,
+    error,
   };
 
   return (

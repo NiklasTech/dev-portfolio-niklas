@@ -1,18 +1,20 @@
-import { Contact } from "./components/Contact";
-import { Hero } from "./components/Hero";
-import { Matrix } from "./components/Matrix";
 import { Navbar } from "./components/Navbar";
-import { Projects } from "./components/Projects";
+import { Hero } from "./components/Hero";
+import { About } from "./components/About";
 import { Skills } from "./components/Skills";
-import { Terminal } from "./components/Terminal";
-import { Timeline } from "./components/Timeline";
-import { TranslationProvider } from "./hooks/useTranslation";
-import { LoadingSpinner } from "./components/LoadingSpinner";
+import { Projects } from "./components/Projects";
+import { NhWebDevBand } from "./components/NhWebDevBand";
+import { Journey } from "./components/Journey";
+import { Contact } from "./components/Contact";
+import { Footer } from "./components/Footer";
+import { TranslationProvider, useTranslation } from "./hooks/useTranslation";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
-import { Suspense, useEffect } from "react";
+import { useEffect } from "react";
 
-export function App() {
+function Page() {
+  const { isLoading } = useTranslation();
+
   useEffect(() => {
     window.scrollTo(0, 0);
     if (window.location.hash) {
@@ -20,24 +22,37 @@ export function App() {
     }
   }, []);
 
+  if (isLoading) {
+    return (
+      <div className="min-h-screen bg-paper flex items-center justify-center">
+        <span className="font-display text-2xl text-ink">Niklas Häußler</span>
+      </div>
+    );
+  }
+
+  return (
+    <div className="min-h-screen bg-paper text-ink">
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <NhWebDevBand />
+        <Journey />
+        <Contact />
+      </main>
+      <Footer />
+    </div>
+  );
+}
+
+export function App() {
   return (
     <TranslationProvider>
-      <Suspense fallback={<LoadingSpinner />}>
-        <div className="min-h-screen text-gray-200">
-          <Matrix />
-          <Navbar />
-          <main>
-            <Hero />
-            <Terminal />
-            <Skills />
-            <Projects />
-            <Timeline />
-            <Contact />
-          </main>
-        </div>
-        <Analytics />
-        <SpeedInsights />
-      </Suspense>
+      <Page />
+      <Analytics />
+      <SpeedInsights />
     </TranslationProvider>
   );
 }

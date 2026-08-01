@@ -55,26 +55,6 @@ export async function loadTranslations(): Promise<Translations> {
     cachedTranslations = translations;
   } catch (error) {
     console.error("Error loading translations:", error);
-
-    // Add fallback translations for critical UI elements
-    const fallbacks = {
-      loading: ["Loading...", "Laden..."],
-      error: ["Error loading content", "Fehler beim Laden des Inhalts"],
-      hero_greeting: ["Hi, I am Niklas", "Hi, ich bin Niklas"],
-      hero_title: ["Full Stack Developer", "Full Stack Entwickler"],
-      nav_home: ["Home", "Startseite"],
-      nav_skills: ["Skills", "Fähigkeiten"],
-      nav_projects: ["Projects", "Projekte"],
-      nav_contact: ["Contact", "Kontakt"],
-    };
-
-    // Add fallbacks to translation object
-    Object.entries(fallbacks).forEach(([key, [en, de]]) => {
-      translations.en[key] = en;
-      translations.de[key] = de;
-    });
-
-    // Re-throw the error for the caller to handle
     throw error;
   }
 
